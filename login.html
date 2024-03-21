@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<style>
+    .change {
+        color: blue;
+    }
+
+    .change:hover {
+        color: tomato;
+    }
+</style>
+
+<body>
+    <div class="total">
+        <div class="container">
+            <div class="vue">
+                <span class="letter">VUESTIC</span>
+                <span class="top">ADMIN</span>
+            </div>
+
+            <div class="header">
+            <div class="Sg">
+            <h2>Log in</h2>
+            <div class="linelogin" >
+                New to Vuestic?
+                <span class="Sign" onclick="Sign()">Sign up</span>
+            </div>
+        </div>
+
+    <div class="form">
+    <div class="email">EMAIL:<br>
+        <input id="log-email" type="text" style="margin-top: 5px; width: 400px;">
+    </div>
+    <div class="pass"> PASSWORD:<br>
+        <input id="log-pass" type="text" style="margin-top: 5px; width: 400px;">
+    </div>
+    <span class="keep"> Keep me signed in on this device</span>
+    <span style="margin-left: 30px;" class="change"  onclick="ChangePage()"> forgot passwork?</span>
+    <div class="login">
+        <button onclick="Login()" style="width: 400px; background-color: rgb(41, 41, 207); color: white; font-weight: bold;">LOGIN</button>
+    </div>
+    <div style="color: red; display: none;" id="err-log-email"> Email không tồn tại</div>
+    <div style="color: rgb(255, 0, 0); display: none;" id="err-log-pass"> Mật khẩu sai! Hãy nhập lại</div>
+</div>
+</div>
+        </div>
+        
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    .log{
+        color: rgb(4, 4, 143);
+    }
+    .log:hover{
+        color: tomato;
+    }
+    
+</style>
+
+<body>
+    <div class="total">
+        <div class="container">
+            <div class="vue">
+                <span class="letter">VUESTIC</span>
+                <span class="top">ADMIN</span>
+            </div>
+
+
+            <div class="header">
+            <div class="Sg">
+            <h1>Sign up</h1>
+            <div class="linelogin">
+                Have an acount?
+                <span class="log" onclick="Log()">Login</span>
+            </div>
+        </div>
+
+
+
+        <div class="form">
+            <div class="email">
+                EMAIL:<br>
+                <input id="mail" type="text" style="width: 350px; margin-top: 5px;">
+            </div>
+
+
+            <div class="pass" style="margin-top: 20px;">
+                PASSWORD:<br>
+                <input id="password" type="text" style="width: 350px; margin-top: 5px;">
+            </div>
+            <p class="password-info">Password should be 8+ characters: letters, numbers, and special characters.</p>
+            <div class="XNpass"> REPEAT PASSWORD:<br>
+                <input id="confirm" type="text" style="width: 350px; margin-top: 5px;">
+            </div>
+
+            <div class="signin">
+                <button id="creat" style="background-color: rgb(61, 61, 221); width: 350px; color: white; font-weight: bold;" onclick="signIn()">Creat account </button>
+            </div>
+
+            <div id="error-mail" style="color: red; display: none;" > ERROR EMAIL</div>
+            <div id="error-pass" style="color: red; display: none;"> ERROR PASSWORK</div>
+        </div>
+    </div>  
+        </div>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
